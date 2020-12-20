@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+
+        >
+
+
+        <TextView
+            android:id="@+id/restraunt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:fontFamily="cursive"
+            android:text="Barbeque Villa"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="40sp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restraunt_name"
+            android:padding="10dp"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+            android:text="hotelnashville@gmail.com"
+            android:textSize="15sp"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_starters"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/restraunt_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/starters" />
+
+
+                <TextView
+                    android:id="@+id/starters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:fontFamily="casual"
+                    android:text="Starters"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="25sp">
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_mains"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_starters"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main" />
+
+
+
+                <TextView
+                    android:id="@+id/Main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:fontFamily="casual"
+                    android:text="Mains"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="25sp">
+
+
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_deserts"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_mains"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/desert_image"/>
+                <TextView
+                    android:id="@+id/desert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:fontFamily="casual"
+                    android:text="Desert"
+                    android:textColor="@color/design_default_color_primary"
+                    android:textSize="25sp">
+                </TextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>
